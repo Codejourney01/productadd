@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Upload-Vybex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="productupload.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="bebas-neue-regular">Vybex</h1>
+        <p>Every beat you feel, every moment you escape — powered by VYBAX</p>
+        <img src="back.png" alt="">
+    </div>
+    <div class="navigate">
+        <img src="home.png" alt="">
+        <p class="navigate-para">Home/ <span> Upload a Product</span></p>
+    </div>
+    <div id="popup">
+        <div class="video">
+            <video src="handshake.mp4" autoplay muted loop></video>
+            <h2>Welcome to <span style="font-size: clamp(0.9rem,1.5vw,2rem);"> Vybex </span> Product Registered</h2>
+            <p>We’ll notify you once your product is approved and visible to customers</p>
+            <a href="productupload.html" style="text-decoration: none;color: white;">
+
+            <button class="continue" style="display: flex;
+            align-items: center;justify-content:center;gap: 5px;">
+                Continue to Vybex
+                <img style="width: 12px;height: 12px;" src="right-arrow.png" alt="">
+            </button>
+            </a>
+        </div>
+    </div>
+    <div class="sub-header" id="subheader">
+        <h3>Add Product Information</h3>
+        <p>- Required details for approval</p>
+    </div>
+    <div class="form" id="formfull">
+
+        <div class="form-container">
+            <form action="" id="paymentform">
+                <div class="form-field">
+                    <label for="">Product Name <span> *</span></label>
+                    <input class="text" type="text" placeholder="Enter Product Name" required>
+                </div>
+                <div class="form-field">
+                    <label for="">Product-Description <span> *</span></label>
+                    <textarea class="des" name="description" id="" placeholder="Describe Your Product" class="des"
+                        required></textarea>
+                </div>
+                <div class="form-field">
+                    <div class="sub-fields">
+                        <label for="">Category <span> * </span></label>
+                        <input class="text" type="text" placeholder="Eg:Headphone / Earphone" required>
+
+                    </div>
+
+
+                </div>
+                <div class="form-field">
+                    <label for="">Connectivity <span> * </span></label>
+                    <select name="" id="">
+                        <option value="Wired">Wired</option>
+                        <option value="Bluetooth">Bluetooth</option>
+                    </select>
+
+                </div>
+                <div class="form-field">
+                    <label for=""> Product Color <span> * </span></label>
+                    <div class="colors-container">
+                        <div class="color">
+                            <input type="checkbox" class="black color-cb">
+                            <div class="circle black"></div>
+
+                            <h5>Black</h5>
+                        </div>
+                        <div class="color">
+                            <input type="checkbox" class="black color-cb">
+                            <div class="circle red"></div>
+
+                            <h5>Red</h5>
+                        </div>
+                        <div class="color">
+                            <input type="checkbox" class="black color-cb">
+                            <div class="circle grey"></div>
+
+                            <h5>Grey</h5>
+                        </div>
+                        <div class="color">
+                            <input type="checkbox" class="black color-cb">
+                            <div class="circle blue"></div>
+
+                            <h5>Blue</h5>
+                        </div>
+
+                    </div>
+                    <p id="color-error" style="color:red; display:none;">Select at least one Color</p>
+
+                </div>
+                <div class="form-field" data-aos="fade-zoom-in">
+                    <label for="">Product Price Per Unit <span> * </span></label>
+                    <input class="text" type="number" placeholder="Price Per Unit" required>
+
+                </div>
+                <div class="form-field" data-aos="fade-zoom-in">
+                    <label for="">Product Quantity<span> * </span></label>
+                    <select name="" id="">
+                        <option value="Upto-20 Units">Upto 20 Units</option>
+                        <option value="Bluetooth">Upto 40 Units</option>
+                        <option value="Bluetooth">Upto 80 Units</option>
+                        <option value="Bluetooth">Upto 100+ Units</option>
+
+
+                    </select>
+
+                </div>
+                <div class="form-field" data-aos="fade-zoom-in">
+                    <label for="">Product Warranty Period<span> * </span></label>
+                    <select name="" id="">
+                        <option value="Upto-20 Units">6-12 Months</option>
+                        <option value="Bluetooth">24 Months</option>
+
+
+                    </select>
+
+                </div>
+                <div class="form-field" data-aos="fade-zoom-in">
+                    <label for="">In the Box ? <span> * </span></label>
+                    <input class="text" type="text" placeholder="Headphones, Cable, Case…" required>
+                </div>
+                <div class="form-field" data-aos="fade-zoom-in">
+                    <label for="">Receive Payment Through <span> * </span></label>
+                    <div class="colors-container payment-category">
+                        <div class=" color pay">
+                            <input type="checkbox" class="pay-checkbox">
+                            <img src="cash-on-delivery.png" alt="">
+                            <h5>Cash On Delivery</h5>
+                        </div>
+                        <div class="color pay">
+                            <input type="checkbox" class="pay-checkbox">
+                            <img src="contactless.png" alt="">
+                            <h5>Card Payment</h5>
+                        </div>
+                        <div class="color pay">
+                            <input type="checkbox" class="pay-checkbox">
+                            <img src=" download.png" alt="">
+                            <h5>UPI Payment</h5>
+                        </div>
+                    </div>
+                    <p id="checkbox-error" style="color:red; display:none;">Select at least one payment method</p>
+
+                </div>
+
+                <div class="form-field" data-aos="fade-zoom-in">
+                    <label for="">Terms and Conditions:</label>
+                    <div class="checkpara">
+                        <input type="checkbox" class="term-cb">
+                        <p>I confirm that all products I list are genuine and described accurately, including all items
+                            in the
+                            box</p>
+                    </div>
+                    <div class="checkpara">
+                        <input type="checkbox" class="term-cb">
+                        <p>I will provide correct pricing, stock, and payment options, and update them promptly if
+                            anything
+                            changes</p>
+                    </div>
+                    <div class="checkpara">
+                        <input type="checkbox" class="term-cb">
+                        <p>I will ship orders on time and honor the stated return or warranty policies for my products
+                        </p>
+                    </div>
+                    <p id="term-error" style="color:red; display:none;">Accept all the Terms & Conditions</p>
+
+                </div>
+                <div class="product-btn">
+                    <input type="submit" value="Publish Product">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        AOS.init({
+            duration: 400,
+            once: false,
+            easing: 'ease-in-out'
+        });
+        const form = document.getElementById('paymentform');
+
+        form.addEventListener('submit', function (e) {
+            const payBoxes = document.querySelectorAll('.pay-checkbox');
+            const colorBoxes = document.querySelectorAll('.color-cb');
+            const termBoxes = document.querySelectorAll('.term-cb');
+
+            const subheader = document.getElementById('subheader');
+            const formcontainer = document.getElementById('formfull');
+            const popup = document.getElementById('popup');
+
+            let isValid = true;
+
+            // PAYMENT (at least one)
+            if (![...payBoxes].some(cb => cb.checked)) {
+                isValid = false;
+                document.getElementById('checkbox-error').style.display = 'block';
+            } else {
+                document.getElementById('checkbox-error').style.display = 'none';
+            }
+
+            // COLOR (at least one)
+            if (![...colorBoxes].some(cb => cb.checked)) {
+                isValid = false;
+                document.getElementById('color-error').style.display = 'block';
+            } else {
+                document.getElementById('color-error').style.display = 'none';
+            }
+
+            // TERMS (ALL required)
+            if (![...termBoxes].every(cb => cb.checked)) {
+                isValid = false;
+                document.getElementById('term-error').style.display = 'block';
+            } else {
+                document.getElementById('term-error').style.display = 'none';
+            }
+
+
+            if (!isValid) {
+                e.preventDefault();
+                return;
+            }
+
+            e.preventDefault();
+            subheader.style.display = 'none';
+            formcontainer.style.display = 'none';
+            popup.style.display = "flex";
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>
